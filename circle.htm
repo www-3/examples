@@ -1,0 +1,12 @@
+<html>
+<canvas id='myCanvas' width='400' height='300' style='background-color:gray'></canvas>
+<script>
+let canvas = document.getElementById('myCanvas');
+let context = canvas.getContext('2d');
+for (let i = 0; i < 40; i++) {
+  context.beginPath();
+  context.arc(200, 150, i * 3, 0, i / 7);
+  context.stroke();
+} 
+</script>
+</html>
