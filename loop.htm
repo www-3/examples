@@ -1,0 +1,11 @@
+<html>
+<canvas id='myCanvas' width='400' height='300' style='background-color:gray'></canvas>
+<script>
+let canvas = document.getElementById('myCanvas');
+let context = canvas.getContext('2d');
+for (let i = 0; i < 50; i++) {
+  context.fillRect (10, i*5, 4, 4 );
+  context.fillRect (i*5, i*5, i, i );
+} 
+</script>
+</html>
